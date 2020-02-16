@@ -27,7 +27,7 @@ function setup() {
   background(11);
   hitSound = loadSound("sounds/hit.m4a");
   bounceSound = loadSound("sounds/bounce.m4a");
-  message = "Press Spacebar To start \n Press M to change the ball";
+  message = "Press Spacebar To start \n Press M to change the ball \n Left paddle Control W-S \n Right paddle Controle UP-Down Arrow keys";
   lossSound = loadSound("sounds/loss.mp3");
   bellSound = loadSound("sounds/bell.mp3");
 }
