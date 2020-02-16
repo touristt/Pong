@@ -38,6 +38,7 @@ function keyPressed() {
 }
 
 function draw() {
+  console.log(B.vel.mag());
   keyIsDown(32) && !started ? start() : null;
   // keyIsDown(77) ? B.toggle() : null;
 
@@ -55,7 +56,15 @@ function draw() {
     ) {
       B.pos.x = width;
       B.vel.x *= -1;
-      B.applyForce(createVector(-2, 0));
+      B.applyForce(createVector(-1.5, 0));
+      if ((b2.vel.y > 0 && B.vel.y > 0) || (b2.vel.y < 0 && B.vel.y < 0)) {
+        B.applyForce(createVector(-1.5, 0));
+      } else if (
+        (b2.vel.y > 0 && B.vel.y < 0) ||
+        (b2.vel.y < 0 && B.vel.y > 0)
+      ) {
+        B.applyForce(createVector(3, 0));
+      }
       fill(255);
       rectMode(CENTER);
       rect(b2.pos.x, b2.pos.y, 10, 200);
@@ -68,7 +77,15 @@ function draw() {
       B.vel.x *= -1;
       B.pos.x = 0;
 
-      B.applyForce(createVector(2, 0));
+      B.applyForce(createVector(1.5, 0));
+      if ((b1.vel.y > 0 && B.vel.y > 0) || (b1.vel.y < 0 && B.vel.y < 0)) {
+        B.applyForce(createVector(1.5, 0));
+      } else if (
+        (b1.vel.y > 0 && B.vel.y < 0) ||
+        (b1.vel.y < 0 && B.vel.y > 0)
+      ) {
+        B.applyForce(createVector(-3, 0));
+      }
       fill(255);
       rectMode(CENTER);
       rect(b1.pos.x, b1.pos.y, 10, 200);
@@ -100,11 +117,18 @@ function draw() {
   }
   B.trail.unshift({ x: B.pos.x, y: B.pos.y });
   B.trail.pop();
+  let c1 = 0,
+    c2 = 0;
+  if (keyIsDown(UP_ARROW) && b2.pos.y - 100 > 0) b2.move(0), c2++;
+  if (keyIsDown(87) && b1.pos.y - 100 > 0) b1.move(0), c1++;
+  if (keyIsDown(DOWN_ARROW) && b2.pos.y + 100 < height) b2.move(1), c2++;
+  if (keyIsDown(83) && b1.pos.y + 100 < height) b1.move(1), c1++;
 
-  if (keyIsDown(UP_ARROW) && b2.pos.y - 100 > 0) b2.move(0);
-  if (keyIsDown(87) && b1.pos.y - 100 > 0) b1.move(0);
-  if (keyIsDown(DOWN_ARROW) && b2.pos.y + 100 < height) b2.move(1);
-  if (keyIsDown(83) && b1.pos.y + 100 < height) b1.move(1);
+  if (!c1) b1.move(2);
+  if (!c2) b2.move(2);
+
+  b1.slide();
+  b2.slide();
   strokeWeight(1);
   stroke(26, 35, 126);
   line(0, 0, width, 0);
