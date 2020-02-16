@@ -25,11 +25,11 @@ function setup() {
   b1 = new Bar(1);
   b2 = new Bar(0);
   background(11);
-  hitSound = loadSound("/sounds/hit.m4a");
-  bounceSound = loadSound("/sounds/bounce.m4a");
+  hitSound = loadSound("sounds/hit.m4a");
+  bounceSound = loadSound("sounds/bounce.m4a");
   message = "Press Spacebar To start \n Press M to change the ball";
-  lossSound = loadSound("/sounds/loss.mp3");
-  bellSound = loadSound("/sounds/bell.mp3");
+  lossSound = loadSound("sounds/loss.mp3");
+  bellSound = loadSound("sounds/bell.mp3");
 }
 function keyPressed() {
   if (keyCode == 77) {
