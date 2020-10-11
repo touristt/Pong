@@ -6,15 +6,6 @@
 */
 const themes = [
 	{
-		ballColor: [3, 207, 252],
-		trailType: 'fading',
-		trailLength: 70,
-		trailColor: [3, 207, 252],
-		background: [15, 68, 153],
-		textColor: [205],
-		paddleColor: [255],
-	},
-	{
 		ballColor: [255, 152, 0],
 		trailType: 'decreasing',
 		trailLength: 20,
@@ -23,6 +14,25 @@ const themes = [
 		textColor: [255, 152, 0],
 		paddleColor: [255, 193, 7],
 	},
+	{
+		ballColor: [20],
+		trailType: 'decreasing',
+		trailLength: 100,
+		trailColor: [7],
+		background: [196],
+		textColor: [20],
+		paddleColor: [49, 27, 146],
+	},
+	{
+		ballColor: [3, 207, 252],
+		trailType: 'fading',
+		trailLength: 70,
+		trailColor: [3, 207, 252],
+		background: [15, 68, 153],
+		textColor: [205],
+		paddleColor: [255],
+	},
+
 	{
 		ballColor: [20],
 		trailType: 'decreasing',
