@@ -49,6 +49,9 @@ class Ball {
 		this.theme = (this.theme + 1) % themes.length;
 		this.trail = new Array(themes[this.theme].trailLength);
 		this.trail.fill({ x: this.pos.x, y: this.pos.y });
+		console.log(this.theme);
+		b1.color = themes[this.theme].paddleColor;
+		b2.color = themes[this.theme].paddleColor;
 	}
 	update(acc) {
 		this.acc.add(createVector(acc.x, acc.y));

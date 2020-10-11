@@ -22,8 +22,8 @@ function start() {
 function setup() {
 	createCanvas(innerWidth, innerHeight - 4);
 	ready(0);
-	b1 = new Bar(1);
-	b2 = new Bar(0);
+	b1 = new Bar(1, themes[0].paddleColor);
+	b2 = new Bar(0, themes[0].paddleColor);
 	background(11);
 	hitSound = loadSound('sounds/hit.m4a');
 	bounceSound = loadSound('sounds/bounce.m4a');
