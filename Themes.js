@@ -6,6 +6,15 @@
 */
 const themes = [
 	{
+	    ballColor: [13, 71, 161],
+	    trailType: 'fading',
+	    trailLength: 10,
+	    trailColor: [255, 1, 5],
+	    background: [16],
+	    textColor: [2, 98, 255],
+	    paddleColor: [2, 98, 255],
+	},
+	{
 		ballColor: [1, 255, 25],
 		trailType: 'decreasing',
 		trailLength: 50,
