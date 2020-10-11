@@ -23,4 +23,23 @@ const themes = [
 		textColor: [255, 152, 0],
 		paddleColor: [255, 193, 7],
 	},
+	{
+		ballColor: [20],
+		trailType: 'decreasing',
+		trailLength: 10,
+		trailColor: [197],
+		background: [49, 27, 146],
+		textColor: [200],
+		paddleColor: [255],
+	},
+
+	{
+		ballColor: [255, 152, 0],
+		trailType: 'fading',
+		trailLength: 100,
+		trailColor: [255, 193, 7],
+		background: [11],
+		textColor: [255, 152, 0],
+		paddleColor: [255, 193, 7],
+	},
 ];
