@@ -158,6 +158,5 @@ const themes = [
 		background: [11],
 		textColor: [255, 152, 0],
 		paddleColor: [155, 193, 7],
-	},
-	
+	}
 ];
