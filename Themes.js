@@ -156,9 +156,7 @@ const themes = [
 		trailLength: 20,
 		trailColor: [255, 193, 7],
 		background: [11],
-		textColor: [155, 122, 0],
+		textColor: [255, 152, 0],
 		paddleColor: [155, 193, 7],
-	},
-	
-	
+	}
 ];
