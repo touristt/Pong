@@ -97,7 +97,7 @@ const themes = [
 		paddleColor: [255, 193, 7],
 	},
 	{
-		ballColor: [155, 152, 0],
+		ballColor: [145, 152, 0],
 		trailType: 'decreasing',
 		trailLength: 20,
 		trailColor: [155, 193, 7],
