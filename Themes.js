@@ -81,7 +81,7 @@ const themes = [
 		ballColor: [20],
 		trailType: 'decreasing',
 		trailLength: 10,
-		trailColor: [197],
+		trailColor: [196],
 		background: [49, 27, 146],
 		textColor: [200],
 		paddleColor: [255],
