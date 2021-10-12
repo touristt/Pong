@@ -28,7 +28,7 @@ function setup() {
 	hitSound = loadSound('sounds/hit.m4a');
 	bounceSound = loadSound('sounds/bounce.m4a');
 	message =
-		'Press Spacebar To start \n Press M to change the theme \n Left paddle Control W-S \n Right paddle Controle UP-Down Arrow keys';
+		'Press Spacebar To start. \n Press M to change theme. \n Left paddle Control W-S. \n Right paddle Controle UP-Down Arrow keys.';
 	lossSound = loadSound('sounds/loss.mp3');
 	bellSound = loadSound('sounds/bell.mp3');
 }
