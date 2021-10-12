@@ -30,7 +30,7 @@ const themes = [
 		trailColor: [7],
 		background: [196],
 		textColor: [20],
-		paddleColor: [49, 27, 146],
+		paddleColor: [48, 27, 146],
 	},
 	{
 		ballColor: [1, 255, 25],
