@@ -33,8 +33,8 @@ const themes = [
 		paddleColor: [48, 27, 146],
 	},
 	{
-		ballColor: [20],
-		trailType: 'increasing',
+		ballColor: [20,23,23],
+		trailType: 'decreasing',
 		trailLength: 100,
 		trailColor: [7],
 		background: [196],
@@ -95,7 +95,6 @@ const themes = [
 		textColor: [200],
 		paddleColor: [255],
 	},
-
 	{
 		ballColor: [255, 152, 0],
 		trailType: 'fading',
@@ -167,7 +166,7 @@ const themes = [
 		background: [11],
 		textColor: [255, 152, 0],
 		paddleColor: [155, 193, 7],
-	}
+	},
 	{
 		ballColor: [20,21],
 		trailType: 'decreasing',
