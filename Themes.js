@@ -22,16 +22,7 @@ const themes = [
 		background: [196],
 		textColor: [20],
 		paddleColor: [48, 27, 146],
-	},
-	{
-		ballColor: [20,34,35],
-		trailType: 'decreasing',
-		trailLength: 100,
-		trailColor: [7],
-		background: [196],
-		textColor: [20],
-		paddleColor: [48, 27, 146],
-	},
+	},  
 	{
 		ballColor: [20,23,23],
 		trailType: 'decreasing',
