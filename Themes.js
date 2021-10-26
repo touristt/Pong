@@ -33,7 +33,7 @@ const themes = [
 		paddleColor: [48, 27, 146],
 	},
 	{
-		ballColor: [20],
+		ballColor: [20,34,35],
 		trailType: 'decreasing',
 		trailLength: 100,
 		trailColor: [7],
