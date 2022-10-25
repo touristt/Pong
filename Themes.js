@@ -6,7 +6,7 @@
 */
 const themes = [
 	{
-		ballColor: [255, 169, 1],
+		ballColor: [254, 169, 1],
 		trailType: 'fading',
 		trailLength: 20,
 		trailColor: [255, 193, 8],
