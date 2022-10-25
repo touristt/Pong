@@ -9,7 +9,7 @@ const themes = [
 		ballColor: [254, 169, 1],
 		trailType: 'fading',
 		trailLength: 20,
-		trailColor: [255, 193, 8],
+		trailColor: [254, 193, 8],
 		background: [11],
 		textColor: [255, 152, 0],
 		paddleColor: [255, 193, 7],
